@@ -1,0 +1,51 @@
+
+    id: 100
+    type: general
+    setup: Did you hear the news?
+    punchline: FedEx and UPS are merging. They’re going to go by the name Fed-Up from now on.
+    
+    id: 131
+    type: general
+    setup: How do you steal a coat?
+    punchline: You jacket.
+    
+    id: 398
+    type: programming
+    setup: Where did the API go to eat?
+    punchline: To the RESTaurant.
+    
+    id: 143
+    type: general
+    setup: How many seconds are in a year?
+    punchline: 12. January 2nd, February 2nd, March 2nd, April 2nd.... etc
+    
+    id: 196
+    type: general
+    setup: What do you call a careful wolf?
+    punchline: Aware wolf.
+    
+    id: 295
+    type: general
+    setup: Where does batman go to the bathroom?
+    punchline: The batroom.
+    
+    id: 350
+    type: general
+    setup: Why do birds fly south for the winter?
+    punchline: Because it's too far to walk.
+    
+    id: 124
+    type: general
+    setup: How do you fix a damaged jack-o-lantern?
+    punchline: You use a pumpkin patch.
+    
+    id: 383
+    type: programming
+    setup: Why dot net developers don't wear glasses?
+    punchline: Because they see sharp.
+    
+    id: 242
+    type: general
+    setup: What happens when you anger a brain surgeon?
+    punchline: They will give you a piece of your mind.
+    
