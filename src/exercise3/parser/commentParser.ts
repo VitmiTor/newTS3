@@ -2,7 +2,6 @@ import { Comment } from "../clases/Comment";
 
 export const generateArrayComment = (arrayCommentJson: any): Comment[] => {
   const arrayComment: Comment[] = [];
-
   arrayCommentJson.forEach((element: any) => {
     arrayComment.push(createComment(element));
   });

@@ -25,4 +25,8 @@ export class Comment {
     body: ${this._body}
     `;
   };
+
+  public get postId() {
+    return this._postId;
+  }
 }

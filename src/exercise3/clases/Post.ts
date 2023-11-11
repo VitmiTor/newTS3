@@ -1,5 +1,6 @@
 import { User } from "./user/User";
 import { getUser } from "../apiCalls/user";
+import { Comment } from "./Comment";
 
 export class Post {
   private _userId: number;
@@ -15,7 +16,6 @@ export class Post {
     this._id = id;
     this._title = title;
     this._body = body;
-    this._arrayComments = [];
   }
 
   public setUser = async () => {
@@ -26,7 +26,27 @@ export class Post {
     return `
     title: ${this._title}
     body: ${this._body} 
-    user: ${this._user.showInformation()}
+    
+    ${this.showArrayCommentInfo()}
     `;
+    //user: ${this._user.showInformation()}
   };
+
+  private showArrayCommentInfo = (): string => {
+    let message = "comments: \n";
+    this._arrayComments.forEach((element, index) => {
+      message += `comentario ${index + 1}\n`;
+      message += element.showInfo();
+      message += "--------------";
+    });
+    return message;
+  };
+
+  public get id() {
+    return this._id;
+  }
+
+  public set arrayComments(arrayComment: Comment[]) {
+    this._arrayComments = arrayComment;
+  }
 }
