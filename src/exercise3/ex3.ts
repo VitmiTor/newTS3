@@ -30,7 +30,6 @@ const fillCommentMap = (
 };
 
 const setPost = (arrayPost: Post[], map: Map<number, Comment[]>): void => {
-  console.log("setPost");
   arrayPost.forEach((post) => {
     const comments = map.get(post.id);
     post.arrayComments = comments;
@@ -45,7 +44,6 @@ const setPost = (arrayPost: Post[], map: Map<number, Comment[]>): void => {
 };
 
 const showAllPost = (arrayPost: Post[]): string[] => {
-  console.log("showAll");
   const arrayString: string[] = [];
   arrayPost.forEach((post) => {
     arrayString.push(post.showInfo());
@@ -55,7 +53,6 @@ const showAllPost = (arrayPost: Post[]): string[] => {
 
 const main = async (): Promise<void> => {
   const arrayPost = await getArrayPost();
-  console.log(`array tamanio ${arrayPost.length}`);
   const arrayComment = await getArrayComment();
 
   const map = createMap(arrayPost);

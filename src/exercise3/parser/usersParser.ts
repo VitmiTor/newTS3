@@ -14,6 +14,7 @@ export const generateUserArray = (arrayUserJson: any): User[] => {
 };
 
 export const generateUser = (userJson: any): User => {
+  //console.log(userJson);
   const address = generateAddress(userJson["address"]);
   const company = generateCompany(userJson["company"]);
   const id = userJson["id"];

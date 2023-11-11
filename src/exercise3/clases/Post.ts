@@ -26,7 +26,7 @@ export class Post {
     return `
     title: ${this._title}
     body: ${this._body} 
-    
+    user: ${this._user.showInformation()}
     ${this.showArrayCommentInfo()}
     `;
     //user: ${this._user.showInformation()}
